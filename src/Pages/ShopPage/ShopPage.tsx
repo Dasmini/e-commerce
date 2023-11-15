@@ -1,11 +1,11 @@
-import React from "react";
-import Products from "../../components/Products";
-import HomePage from "../HomePage/HomePage";
+// import React from "react";
+// import Products from "../../components/Products";
+// import HomePage from "../HomePage/HomePage";
 import Items from "../../components/Items";
 
-interface Props {}
+// interface Props {}
 
-const ShopPage = (props: Props) => {
+const ShopPage = () => {   //props: Props
 //   const productDetails = [
 //     {
 //       id: 1,
