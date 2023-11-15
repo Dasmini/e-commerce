@@ -1,16 +1,18 @@
-import React from 'react';
+// import React from 'react';
 import Home from '../../components/Home';
-import Products from '../../components/Products';
+// import Products from '../../components/Products';
 import Items from '../../components/Items';
+import NewsLetter from '../../components/NewsLetter';
 
-interface Props {}
+// interface Props {}
 
-const HomePage = (props:Props) => {
+const HomePage = () => {
     
     return(
         <>
             <Home/>
             <Items displayPage='home'/>
+            <NewsLetter/>
         </>
     )
 }

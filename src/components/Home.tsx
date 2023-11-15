@@ -7,10 +7,10 @@ export default function Home() {
       <div className="Home-main">
         <div className="hot-content-details">
           <h1>Heard of home cosmetics?</h1>
-          <p>No? Let's try them!!</p>
+          <p>No? Let's try them! Shall we ?</p>
           <Link to="shop"><button>Shop Now</button></Link>
         </div>
-        <img src="/background.jpg" alt="books" />
+        <img src="/background.jpg" alt="background" />
       </div>
     </>
   );
