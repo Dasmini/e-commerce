@@ -5,7 +5,6 @@ import HomePage from "../Pages/HomePage/HomePage";
 import ShopPage from "../Pages/ShopPage/ShopPage";
 import ContactPage from "../Pages/ContactPage/ContactPage";
 import ProfilePage from "../Pages/ProfilePage/ProfilePage";
-import Wishlist from "../components/Wishlist";
 import WishlistPage from "../Pages/WishlistPage/WishlistPage";
 
 export const router = createBrowserRouter([
@@ -35,7 +34,7 @@ export const router = createBrowserRouter([
             },
             {
                 path : "wishlist",
-                element : <Wishlist items={['Learn React','Abcd']}/>
+                element : <WishlistPage/>
                 // element : <WishlistPage data={{id:1,content:"das"}}/>
             }
         ],

@@ -1,21 +1,15 @@
-import './App.css'
-import Navigation from './components/Navigation';
-import Home from './components/Home';
-import Products from './components/Products';
-import Wishlist from './components/Wishlist';
-import { Outlet } from 'react-router';
-function App() {
+import "./App.css";
+import Navigation from "./components/Navigation";
+import { Outlet } from "react-router";
+import { ProductDetailsProvider } from "./components/ProductDetailsContext";
 
-  
-    var wishedProduct = 1;
-
-
+const App:React.FC=()=> {
   return (
-    <>
+    <ProductDetailsProvider>
       <Navigation></Navigation>
-      <Outlet/>
-    </>
-  )
+      <Outlet />
+    </ProductDetailsProvider>
+  );
 }
 
-export default App
+export default App;

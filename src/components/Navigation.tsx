@@ -11,21 +11,22 @@ export default function Navigation(){
             </Link>
             <div className="nav-contents-1">
                 <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="shop">Shop</a></li>
-                    <li><a href="about">About</a></li>
-                    <li><a href="contact">Contact</a></li>
+                    <li><Link to="/">Home</Link></li>
+                    <li><Link to="shop">Shop</Link></li>
+                    <li><Link to="about">About</Link></li>
+                    <li><Link to="contact">Contact</Link></li>
                 </ul>
             </div>
             <div className="nav-contents-2">
                 <ul>
                     <li><input type="text" placeholder="Type here to search"/></li>
-                    <li><a href="wishlist"><img src="" alt="Wishlist" /></a></li>
-                    <li><a href="my_profile"><img src="" alt="My profile" /></a></li>
-                    <li><a href="#"><img src="" alt="Cart" /></a></li>
+                    <li><Link to="wishlist"><img src="./heart.png" alt="Wishlist" className="nav-icons" title='wishlist'/></Link></li>
+                    <li><Link to="my_profile"><img src="./user.png" alt="My profile" className="nav-icons" title='My Profile'/></Link></li>
+                    <li id="cart-icon-cont"><Link to="cart"><img src="./shopping-cart.png" alt="Cart" className="nav-icons" title='Cart'/><div className='cart-count'>0</div></Link></li>
                 </ul>
             </div>
             </div>
+            <hr id='hr-nav'/>
         </>
     )
 }

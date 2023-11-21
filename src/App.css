@@ -9,7 +9,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  
+  font-family: 'Open Sans', sans-serif;
 }
 li{
   list-style: none;
@@ -26,11 +26,18 @@ a{
   width: 150px;
   height: auto;
 }
+.nav-bar{
+  padding: 10px;
+}
+.nav-contents-1,.nav-contents-2{
+  margin-top: 40px;
+}
 .nav-contents-1 ul{
   display: flex;
 }
 .nav-contents-1 ul li{
   margin: auto 50px;
+  font-size: 20px;
 }
 .nav-contents-2 ul{
   display: flex;
@@ -38,13 +45,50 @@ a{
 .nav-contents-2 ul li{
   margin: auto 20px;
 }
+.nav-contents-2 ul li input{
+  border: none;
+  background-color: transparent;
+}
+.nav-contents-2 ul li input:focus{
+  outline: none;
+  border-bottom: 1px solid gray;
+}
+.nav-icons{
+  height: 20px;
+}
+#cart-icon-cont{
+  position: relative;
+}
+.cart-count{
+  position: absolute;
+  background-color: rgb(154, 181, 104);
+  border-radius: 11px;
+  text-align: center;
+  font-size: 14px;
+  padding: 2px;
+  width: 20px;
+  height: 20px;
+  margin-top: -30px;
+  margin-left: 15px;
+}
+#hr-nav{
+  border: 2px solid gray;
+}
 .Home-main{
   height: 100vh;
 }
 .hot-content-details{
   position: absolute;
+  line-height: 1.5;
   top: 50%;
   left: 15%;
+}
+.hot-content-details button{
+  border: 1px solid rgb(174, 131, 67);
+  border-radius: 25px;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: rgb(174, 131, 67);
 }
 .Home-main img{
   height: 100vh;
@@ -71,6 +115,7 @@ a{
   top: 20px;
   height: 25px;
   width: auto;
+  
 }
 #heart:hover{
   fill: red;
@@ -84,4 +129,33 @@ a{
   position: absolute;
   background-color: aqua;
   padding: 5px;
+}
+
+/* News Letter */
+
+.news-letter{
+  background-color: rgb(251, 241, 227);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 150px;
+  line-height: 2;
+}
+.news-letter div{
+  margin: 20px;
+}
+.news-letter div input{
+  outline: none;
+  border: 1px solid gray;
+  border-radius: 25px;
+  padding: 10px;
+  margin-right: 10px;
+}
+.news-letter div button{
+  border: 1px solid rgb(201, 143, 55);
+  border-radius: 25px;
+  padding: 10px;
+  margin-left: 10px;
+  background-color: rgb(201, 143, 55);
 }
